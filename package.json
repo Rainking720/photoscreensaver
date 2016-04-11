@@ -1,10 +1,10 @@
 {
-    "name": "awesomedeveloper.soundeffectspack",
-    "displayName": "Sound Effects Pack",
+    "name": "emby.photoscreensaver",
+    "displayName": "Photo Screen Saver",
     "version": "1.0.0",
-    "description": "Awesome sound effects!",
+    "description": "Ken Burns-Like Photo Screen Saver.",
     "plugin": "plugin.js",
-    "homepage": "https://github.com/MediaBrowser/emby.web.plugins.soundeffects",
+    "homepage": "https://github.com/Rainking720/photoscreensaver",
     "thumb": "",
     "backdrop": ""
 }
