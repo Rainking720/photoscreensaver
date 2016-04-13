@@ -65,7 +65,7 @@ define(['datetime', 'dialogHelper', 'connectionManager', 'css!./style', 'html!./
                         return;
 
                     var date = datetime.parseISO8601Date(items[this.getSlideIndex()].PremiereDate);
-                    if (date)
+                    if (date && document.querySelector('.kenburns-slideshowImageText'))
                         document.querySelector('.kenburns-slideshowImageText').innerHTML = date.toLocaleDateString();
                 }
             });
