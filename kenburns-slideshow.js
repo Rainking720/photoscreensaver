@@ -33,13 +33,14 @@ define(['datetime', 'dialogHelper', 'connectionManager'], function (datetime, di
         function startSlideshow(options) {
 
             var items = options.items;
-
+            var itemLength = items.length;
             var imgUrls = [];
-            $.each(items, function (index, item) {
+            for (var i = 0; i < itemLength; i++) {
+                var item = items[i];
                 var url = getImgUrl(item);
                 if (url != null)
                     imgUrls.push(url);
-            });
+            }         
 
             var cardImageContainer = dlg.querySelector('.kenburns-slideshowImage');
             var newCardImageContainer = document.createElement('div');
