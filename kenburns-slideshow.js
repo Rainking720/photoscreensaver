@@ -1,4 +1,4 @@
-define(['datetime', 'dialogHelper', 'connectionManager', 'css!./style', 'html!./icons', 'iron-icon-set', 'paper-fab', 'paper-icon-button', 'paper-spinner'], function (datetime, dialogHelper, connectionManager) {
+define(['datetime', 'dialogHelper', 'connectionManager'], function (datetime, dialogHelper, connectionManager) {
 
     return function (options) {
 
