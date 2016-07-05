@@ -1,4 +1,4 @@
-define(['datetime', 'dialogHelper', 'connectionManager'], function (datetime, dialogHelper, connectionManager) {
+define(['datetime', 'dialogHelper', 'connectionManager', 'css!./style', 'html!./icons'], function (datetime, dialogHelper, connectionManager) {
 
     return function (options) {
 
@@ -33,14 +33,13 @@ define(['datetime', 'dialogHelper', 'connectionManager'], function (datetime, di
         function startSlideshow(options) {
 
             var items = options.items;
-            var itemLength = items.length;
+
             var imgUrls = [];
-            for (var i = 0; i < itemLength; i++) {
-                var item = items[i];
+            $.each(items, function (index, item) {
                 var url = getImgUrl(item);
                 if (url != null)
                     imgUrls.push(url);
-            }         
+            });
 
             var cardImageContainer = dlg.querySelector('.kenburns-slideshowImage');
             var newCardImageContainer = document.createElement('div');
