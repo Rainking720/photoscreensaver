@@ -3,6 +3,9 @@
 }
 
 .kenburns-slideshowImageText {
+	background-color: rgba(6, 6, 6, .45);
+    border: 3px outset rgba(225,225,225,.25);
+    border-radius: 25px;
 	position: fixed;
 	bottom: .25em;
 	right: .5em;

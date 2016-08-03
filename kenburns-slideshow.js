@@ -45,8 +45,8 @@ define(['datetime', 'dialogHelper', 'connectionManager', 'css!./style', 'html!./
             var newCardImageContainer = document.createElement('div');
             cardImageContainer.parentNode.appendChild(newCardImageContainer);
 
-            var width = screen.availWidth / options.scale;
-            var height = screen.availHeight / options.scale;
+            var width = window.innerWidth / options.scale;
+            var height = window.innerHeight / options.scale;
 
             cardImageContainer.style.width = width + "px";
             cardImageContainer.style.height = height + "px";
@@ -57,8 +57,8 @@ define(['datetime', 'dialogHelper', 'connectionManager', 'css!./style', 'html!./
                 duration: options.interval,
                 fadeSpeed: options.fadeSpeed,
                 ease3d: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)',
-                loaderPosX: (screen.availWidth / 2 - 16),
-                loaderPosY: (screen.availHeight / 2 - 16),
+                loaderPosX: (window.innerWidth / 2 - 16),
+                loaderPosY: (window.innerHeight / 2 - 16),
 
                 onSlideComplete: function () {
                     if (!items[this.getSlideIndex()].PremiereDate)
@@ -77,8 +77,8 @@ define(['datetime', 'dialogHelper', 'connectionManager', 'css!./style', 'html!./
 
             return getImageUrl(item, {
                 type: "Primary",
-                maxWidth: screen.availWidth / options.scale,
-                maxHeight: screen.availHeight / options.scale
+                maxWidth: window.innerWidth / options.scale,
+                maxHeight: window.innerHeight / options.scale
             }, apiClient);
         }
 

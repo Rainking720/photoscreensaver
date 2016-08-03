@@ -32,9 +32,9 @@ define(['pluginManager'], function (pluginManager) {
                             showDate: true,
                             cover: true,
                             fadeSpeed: 1000,
-                            interval: 10000,
+                            interval: 12000,
                             items: result.Items,
-                            scale: .85
+                            scale: .95
                         });
 
                         newSlideShow.show();
